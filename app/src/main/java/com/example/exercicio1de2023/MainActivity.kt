@@ -18,10 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         changeText()
 
-        val textView = findViewById<TextView>(R.id.TextView1)
-        val button = findViewById<Button>(R.id.button1)
-
-
     }
 
     private fun viewBinding() {
@@ -34,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val listagem = listOf("João", "Ricardo", "Rafael", "Maria", "Aline")
         var itemIndex = 0
 
-        binding.button1.setOnClickListener{
+        binding.button1.setOnClickListener {
             if (itemIndex >= listagem.size) {
                 itemIndex = 0
             }
